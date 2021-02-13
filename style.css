@@ -1,0 +1,68 @@
+body {
+	/*background-color: #333;*/
+	background: linear-gradient(90deg, rgb(15, 29, 180) 1%, rgb(215, 6, 18) 85%);
+	overflow: hidden;
+}
+
+.container {
+	margin-top: 15%;
+	width: 25%;
+	height: 35%;
+	text-align: center;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    left: 45%;
+    width: 550px;
+    height: 550px;
+    background: linear-gradient(rgb(4, 21, 250), rgb(238, 6, 18));
+    border-radius: 50%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    bottom: 53%;
+    left: 23%;
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(rgb(250, 102, 4), rgb(238, 6, 161));
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.card {
+	background: rgba(255, 255, 255, 0.20);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.85);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	padding: 15%;
+	border-radius: 25px;
+    backdrop-filter: blur(20px);
+    transform-style: preserve-3d;
+}
+
+.container label {
+	color: white;
+	font-weight: 650;
+	padding: 10px;
+}
+
+.container input {
+	padding: 5px;
+	border: solid 1px #fff;
+	border-radius: 10px;
+	background: rgba(255,255,255,0.3);
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+.container button {
+	width: 50%;
+	margin: auto;
+	margin-top: 20px;
+}
