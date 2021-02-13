@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body h1 {
+  font-weight: bold;
+}
+
+body p {
+  padding: 7px;
+  font-size: 18px;
+}
+
+.card {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.40);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.card label {
+  font-weight: 600;
+}
+
+.card input {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.card button {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.background {
+  background: url('https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1340&q=80')
+    no-repeat center center/cover;
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  filter: blur(27px);
+}
